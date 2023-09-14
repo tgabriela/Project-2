@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">We appreciate your participation in our industry. Please take the survey & leave a remark below to help with future improvement.</p>
+
+  <form class="survey-form" action="" id="submitForm">
+    <label id="name-label"> Name
+        <input id="name" type="text" placeholder="Enter your name" required>
+      </label>
+
+    <label id="email-label"> E-mail
+        <input id="email" type="email" placeholder="Enter your E-mail" required>
+      </label>
+
+    <label id="number-label">Age <span id="optional">(optional)</span>
+        <input id="number" type="number" placeholder="Age" min="10" max="100">
+      </label>
+
+    <label>Which option best describes your current role?</label>
+    <select id="dropdown">
+      <option>Select current role</option>
+      <option>Student</option>
+      <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select>
+    
+    <label id="question">Would you recommend freeCodeCamp to a friend?</label>
+      <input type="radio" value="definitely" name="option"> Definitely
+      <input type="radio" value="maybe" name="option"> Maybe
+      <input type="radio" value="notSure" name="option"> Not sure
+    
+    <label id="question">What is your favorite feature of freeCodeCamp?</label>
+      <input name="prefer" type="checkbox" value="front-end-projects"> Front-end Projects
+      <input name="prefer" type="checkbox" value="back-end-projects"> Back-end Projects
+      <input name="prefer" type="checkbox" value="data-visualization"> Data Visualization
+      <input name="prefer" type="checkbox" value="challenges"> Challenges
+      <input name="prefer" type="checkbox" value="open-source-community"> Open Source Community
+      <input name="prefer" type="checkbox" value="gitter-help-rooms"> Gitter help rooms
+      <input name="prefer" type="checkbox" value="videos"> Videos
+      <input name="prefer" type="checkbox" value="city-meetups"> City Meetups
+      <input name="prefer" type="checkbox" value="wiki"> Wiki
+      <input name="prefer" type="checkbox" value="forum"> Forum
+      <input name="prefer" type="checkbox" value="additional courses"> Additional Courses
+
+    <p>Any comments or suggestions?</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+
+</form>
+</body>
+</html>
